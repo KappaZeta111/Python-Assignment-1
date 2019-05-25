@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Mar 11 10:41:03 2018
+
+@author: jofadamiro
+"""
+
+from ezgraphics import GraphicsWindow
+
+win = GraphicsWindow(400, 400)
+win.setTitle("Midterm-Question 1" )
+
+canvas = win.canvas()
+
+canvas.setOutline("blue")
+canvas.setFill("blue")
+canvas.drawRect(100,200, 200,200)
+
+canvas.setOutline("gold")
+canvas.setFill("gold")
+canvas.drawRect(125,300, 75,100)
+
+canvas.setOutline("green")
+canvas.setFill("green")
+canvas.drawRect(225,300, 50,50)
+
+canvas.setOutline("orange")
+canvas.setFill("purple")
+canvas.drawPoly(100, 200, 200,100,300,200)
+
+win.wait()
